@@ -1,0 +1,5 @@
+- Button closing modal window had link text of "x".
+- Link to Twitter only had link text of "t".
+- Link to Facebook only had link text of "f".
+- Confirmation link had text of a unicode tick.
+- Character "x" to close window again
