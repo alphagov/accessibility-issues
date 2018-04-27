@@ -48,10 +48,7 @@ You should now be able to view a live preview at http://localhost:4567.
 
 ### Build
 
-If you want to publish the website without using a build script you may need to
-build the static HTML files.
-
-Type the following to build the HTML:
+To build the static HTML files locally, type the following to build the HTML:
 
 ```
 bundle exec middleman build
@@ -59,6 +56,17 @@ bundle exec middleman build
 
 This will create a `build` subfolder in the application folder which contains
 the HTML and asset files ready to be published.
+
+To build and deploy to GitHub pages, type this:
+
+```
+rake publish
+```
+
+This will build, commit and push all the necessary files to the gh-pages branch,
+which means all latest changes will be published.
+Please make sure to only do that from the recent 'master' branch.
+
 
 [rvm]: https://www.ruby-lang.org/en/documentation/installation/#managers
 [bundler]: http://bundler.io/
