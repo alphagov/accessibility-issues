@@ -1,0 +1,48 @@
+<table>
+  <thead>
+    <tr>
+      <th>Issue</th>
+      <% if cols.include? :wcag %>
+        <th><abbr title="Web Content Accessibility Guidelines Success Criterion">WCAG SC</abbr></th>
+      <% end %>
+      <% if cols.include? :concern %>
+        <th>Concern</th>
+      <% end %>
+      <% if cols.include? :severity %>
+        <th>Severity</th>
+      <% end %>
+      <% if cols.include? :complexity %>
+        <th>Complexity</th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% issues.each do |issue| %>
+      <tr>
+        <th>
+          <%= link_to issue.data.title, issue %>
+        </th>
+        <% if cols.include? :wcag %>
+          <td>
+            <%= issue.data.wcag %>
+          </td>
+        <% end %>
+        <% if cols.include? :concern %>
+          <td>
+            <%= issue.data.concern %>
+          </td>
+        <% end %>
+        <% if cols.include? :severity %>
+          <td>
+            <%= issue.data.severity %>
+          </td>
+        <% end %>
+        <% if cols.include? :complexity %>
+          <td>
+            <%= issue.data.complexity %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+---
+layout: core
+nav_highlight: /concerns.html
+---
+
+<%= partial "/_includes/sitenav" %>
+
+# <%= title %>
+
+<%= partial "/_includes/issues_table", locals: {
+  issues: sitemap.resources.select{|resource| resource.options[:layout]=='issue' && resource.data.concern.to_s.include?(concern)},
+  cols: [:wcag, :concern, :severity, :complexity]
+} %>

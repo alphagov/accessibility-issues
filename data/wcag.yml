@@ -1,0 +1,468 @@
+-
+  sc: 1.1.1
+  name: Non-text Content
+  anchor: non-text-content
+  level: A
+  version: 2.0
+-
+  sc: 1.2.1
+  name: Audio-only and Video-only (Prerecorded)
+  anchor: audio-only-and-video-only-prerecorded
+  level: A
+  version: 2.0
+-
+  sc: 1.2.2
+  name: Captions (Prerecorded)
+  anchor: captions-prerecorded
+  level: A
+  version: 2.0
+-
+  sc: 1.2.3
+  name: Audio Description or Media Alternative (Prerecorded)
+  anchor: audio-description-or-media-alternative-prerecorded
+  level: A
+  version: 2.0
+-
+  sc: 1.2.4
+  name: Captions (Live)
+  anchor: captions-live
+  level: AA
+  version: 2.0
+-
+  sc: 1.2.5
+  name: Audio Description (Prerecorded)
+  anchor: audio-description-prerecorded
+  level: AA
+  version: 2.0
+-
+  sc: 1.2.6
+  name: Sign Language (Prerecorded)
+  anchor: sign-language-prerecorded
+  level: AAA
+  version: 2.0
+-
+  sc: 1.2.7
+  name: Extended Audio Description (Prerecorded)
+  anchor: extended-audio-description-prerecorded
+  level: AAA
+  version: 2.0
+-
+  sc: 1.2.8
+  name: Media Alternative (Prerecorded)
+  anchor: media-alternative-prerecorded
+  level: AAA
+  version: 2.0
+-
+  sc: 1.2.9
+  name: Audio-only (Live)
+  anchor: audio-only-live
+  level: AAA
+  version: 2.0
+-
+  sc: 1.3.1
+  name: Info and Relationships
+  anchor: info-and-relationships
+  level: A
+  version: 2.0
+-
+  sc: 1.3.2
+  name: Meaningful Sequence
+  anchor: meaningful-sequence
+  level: A
+  version: 2.0
+-
+  sc: 1.3.3
+  name: Sensory Characteristics
+  anchor: sensory-characteristics
+  level: A
+  version: 2.0
+-
+  sc: 1.3.4
+  name: Orientation
+  anchor: orientation
+  level: AA
+  version: 2.1
+-
+  sc: 1.3.5
+  name: Identify Input Purpose
+  anchor: identify-input-purpose
+  level: AA
+  version: 2.1
+-
+  sc: 1.3.6
+  name: Identify Purpose
+  anchor: identify-purpose
+  level: AAA
+  version: 2.1
+-
+  sc: 1.4.1
+  name: Use of Color
+  anchor: use-of-color
+  level: A
+  version: 2.0
+-
+  sc: 1.4.2
+  name: Audio Control
+  anchor: audio-control
+  level: A
+  version: 2.0
+-
+  sc: 1.4.3
+  name: Contrast (Minimum)
+  anchor: contrast-minimum
+  level: AA
+  version: 2.0
+-
+  sc: 1.4.4
+  name: Resize text
+  anchor: resize-text
+  level: AA
+  version: 2.0
+-
+  sc: 1.4.5
+  name: Images of Text
+  anchor: images-of-text
+  level: AA
+  version: 2.0
+-
+  sc: 1.4.6
+  name: Contrast (Enhanced)
+  anchor: contrast-enhanced
+  level: AAA
+  version: 2.0
+-
+  sc: 1.4.7
+  name: Low or No Background Audio
+  anchor: low-or-no-background-audio
+  level: AAA
+  version: 2.0
+-
+  sc: 1.4.8
+  name: Visual Presentation
+  anchor: visual-presentation
+  level: AAA
+  version: 2.0
+-
+  sc: 1.4.9
+  name: Images of Text (No Exception)
+  anchor: images-of-text-no-exception
+  level: AAA
+  version: 2.0
+-
+  sc: 1.4.10
+  name: Reflow
+  anchor: reflow
+  level: AA
+  version: 2.1
+-
+  sc: 1.4.11
+  name: Non-text Contrast
+  anchor: non-text-contrast
+  level: AA
+  version: 2.1
+-
+  sc: 1.4.12
+  name: Text Spacing
+  anchor: text-spacing
+  level: AA
+  version: 2.1
+-
+  sc: 1.4.13
+  name: Content on Hover or Focus
+  anchor: content-on-hover-or-focus
+  level: AA
+  version: 2.1
+-
+  sc: 2.1.1
+  name: Keyboard
+  anchor: keyboard
+  level: AA
+  version: 2.0
+-
+  sc: 2.1.2
+  name: No Keyboard Trap
+  anchor: no-keyboard-trap
+  level: A
+  version: 2.0
+-
+  sc: 2.1.3
+  name: Keyboard (No Exception)
+  anchor: keyboard-no-exception
+  level: AAA
+  version: 2.0
+-
+  sc: 2.2.1
+  name: Timing Adjustable
+  anchor: timing-adjustable
+  level: A
+  version: 2.0
+-
+  sc: 2.2.2
+  name: Pause, Stop, Hide
+  anchor: pause-stop-hide
+  level: A
+  version: 2.0
+-
+  sc: 2.2.3
+  name: No Timing
+  anchor: no-timing
+  level: AAA
+  version: 2.0
+-
+  sc: 2.2.4
+  name: Interruptions
+  anchor: interruptions
+  level: AAA
+  version: 2.0
+-
+  sc: 2.2.5
+  name: Re-authenticating
+  anchor: re-authenticating
+  level: AAA
+  version: 2.0
+-
+  sc: 2.2.6
+  name: Timeouts
+  anchor: timeouts
+  level: AAA
+  version: 2.1
+-
+  sc: 2.3.1
+  name: Three Flashes or Below Threshold
+  anchor: three-flashes-or-below-threshold
+  level: A
+  version: 2.0
+-
+  sc: 2.3.2
+  name: Three Flashes
+  anchor: three-flashes
+  level: AAA
+  version: 2.0
+-
+  sc: 2.3.3
+  name: Animation from Interactions
+  anchor: animation-from-interactions
+  level: AAA
+  version: 2.1
+-
+  sc: 2.4.1
+  name: Bypass Blocks
+  anchor: bypass-blocks
+  level: A
+  version: 2.0
+-
+  sc: 2.4.2
+  name: Page Titled
+  anchor: page-titled
+  level: A
+  version: 2.0
+-
+  sc: 2.4.3
+  name: Focus Order
+  anchor: focus-order
+  level: A
+  version: 2.0
+-
+  sc: 2.4.4
+  name: Link Purpose (In Context)
+  anchor: link-purpose-in-context
+  level: A
+  version: 2.0
+-
+  sc: 2.4.5
+  name: Multiple Ways
+  anchor: multiple-ways
+  level: AA
+  version: 2.0
+-
+  sc: 2.4.6
+  name: Headings and Labels
+  anchor: headings-and-labels
+  level: AA
+  version: 2.0
+-
+  sc: 2.4.7
+  name: Focus Visible
+  anchor: focus-visible
+  level: AA
+  version: 2.0
+-
+  sc: 2.4.8
+  name: Location
+  anchor: location
+  level: AAA
+  version: 2.0
+-
+  sc: 2.4.9
+  name: Link Purpose (Link Only)
+  anchor: link-purpose-link-only
+  level: AAA
+  version: 2.0
+-
+  sc: 2.4.10
+  name: Section Headings
+  anchor: section-headings
+  level: AAA
+  version: 2.0
+-
+  sc: 2.5.1
+  name: Pointer Gestures
+  anchor: pointer-gestures
+  level: A
+  version: 2.1
+-
+  sc: 2.5.2
+  name: Pointer Cancellation
+  anchor: pointer-cancellation
+  level: A
+  version: 2.1
+-
+  sc: 2.5.3
+  name: Character Key Shortcuts
+  anchor: character-key-shortcuts
+  level: A
+  version: 2.1
+-
+  sc: 2.5.4
+  name: Label in Name
+  anchor: label-in-name
+  level: A
+  version: 2.1
+-
+  sc: 2.5.5
+  name: Target Size
+  anchor: target-size
+  level: AAA
+  version: 2.1
+-
+  sc: 2.5.6
+  name: Concurrent Input Mechanisms
+  anchor: concurrent-input-mechanisms
+  level: AAA
+  version: 2.1
+-
+  sc: 2.5.7
+  name: Motion Actuation
+  anchor: motion-actuation
+  level: A
+  version: 2.1
+-
+  sc: 3.1.1
+  name: Language of Page
+  anchor: language-of-page
+  level: A
+  version: 2.0
+-
+  sc: 3.1.2
+  name: Language of Parts
+  anchor: language-of-parts
+  level: AA
+  version: 2.0
+-
+  sc: 3.1.3
+  name: Unusual Words
+  anchor: unusual-words
+  level: AAA
+  version: 2.0
+-
+  sc: 3.1.4
+  name: Abbreviations
+  anchor: abbreviations
+  level: AAA
+  version: 2.0
+-
+  sc: 3.1.5
+  name: Reading Level
+  anchor: reading-level
+  level: AAA
+  version: 2.0
+-
+  sc: 3.1.6
+  name: Pronunciation
+  anchor: pronunciation
+  level: AAA
+  version: 2.0
+-
+  sc: 3.2.1
+  name: On Focus
+  anchor: on-focus
+  level: A
+  version: 2.0
+-
+  sc: 3.2.2
+  name: On Input
+  anchor: on-input
+  level: A
+  version: 2.0
+-
+  sc: 3.2.3
+  name: Consistent Navigation
+  anchor: consistent-navigation
+  level: AA
+  version: 2.0
+-
+  sc: 3.2.4
+  name: Consistent Identification
+  anchor: consistent-identification
+  level: AA
+  version: 2.0
+-
+  sc: 3.2.5
+  name: Change on Request
+  anchor: change-on-request
+  level: AAA
+  version: 2.0
+-
+  sc: 3.3.1
+  name: Error Identification
+  anchor: error-identification
+  level: A
+  version: 2.0
+-
+  sc: 3.3.2
+  name: Labels or Instructions
+  anchor: labels-or-instructions
+  level: A
+  version: 2.0
+-
+  sc: 3.3.3
+  name: Error Suggestion
+  anchor: error-suggestion
+  level: AA
+  version: 2.0
+-
+  sc: 3.3.4
+  name: Error Prevention (Legal, Financial, Data)
+  anchor: error-prevention-legal-financial-data
+  level: AA
+  version: 2.0
+-
+  sc: 3.3.5
+  name: Help
+  anchor: help
+  level: AAA
+  version: 2.0
+-
+  sc: 3.3.6
+  name: Error Prevention (All)
+  anchor: error-prevention-all
+  level: AAA
+  version: 2.0
+-
+  sc: 4.1.1
+  name: Parsing
+  anchor: parsing
+  level: A
+  version: 2.0
+-
+  sc: 4.1.2
+  name: Name, Role, Value
+  anchor: name-role-value
+  level: A
+  version: 2.0
+-
+  sc: 4.1.3
+  name: Status Messages
+  anchor: status-messages
+  level: AA
+  version: 2.1

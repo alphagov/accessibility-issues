@@ -1,0 +1,21 @@
+tools:
+  tenon: Tenon
+  achecker: AChecker
+  axe: aXe
+  asqatasun: Asqa&shy;tasun
+  sortsite: Sort&shy;Site
+  wave: WAVE
+  codesniffer: HTML_&shy;Code&shy;Sniffer
+  google: Google ADT
+  eiii: <abbr title=European Internet Inclusion Initiative>EIII</abbr>
+  nu: Nu Html Checker
+  siteimprove: Site&shy;improve
+  fae: <abbr title=Functional Accessibility Evaluator>FAE</abbr>
+  aslint: AS&shy;Lint
+results:
+  found: issue found
+  error_paid: issue found (paid)
+  warning: warning only
+  notfound: not found
+  identified: noticed but not a fail
+  manual: user to check

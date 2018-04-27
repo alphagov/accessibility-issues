@@ -1,0 +1,14 @@
+---
+layout: core
+title: Issues filtered by best practice
+nav_highlight: /wcag.html
+---
+
+<%= partial "/_includes/sitenav" %>
+
+# <%= current_page.data.title %>
+
+<%= partial "/_includes/issues_table", locals: {
+  issues: sitemap.resources.select{|resource| resource.options[:layout]=='issue' && resource.data.wcag.blank?},
+  cols: [:concern, :severity, :complexity]
+} %>

@@ -1,0 +1,13 @@
+---
+layout: plain
+---
+
+<%= partial("#{dir}/example_html") rescue nil %>
+
+<% content_for :css do %>
+<%= partial("#{dir}/example_css") rescue nil %>
+<% end %>
+
+<% content_for :js do %>
+<%= partial("#{dir}/example_js") rescue nil %>
+<% end %>

@@ -1,0 +1,15 @@
+---
+layout: core
+nav_highlight: /wcag.html
+---
+
+<%= partial "/_includes/sitenav" %>
+
+# <%= title %>
+
+All of these examples are failing <%= link_to "#{name} [#{level}]", "https://www.w3.org/TR/WCAG21/##{anchor}" %>.
+
+<%= partial "/_includes/issues_table", locals: {
+  issues: sitemap.resources.select{|resource| resource.options[:layout]=='issue' && resource.data.wcag.to_s.include?(sc)},
+  cols: [:concern, :severity, :complexity]
+} %>

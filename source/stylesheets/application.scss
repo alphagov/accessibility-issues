@@ -1,0 +1,36 @@
+
+/* @todo: remove when tech-docs-gem release includes
+          https://github.com/alphagov/tech-docs-gem/pull/20 */
+body {
+  color: $text-colour;
+  background-color: $page-colour;
+}
+
+table {
+  margin-top: $gutter; /* @todo: fix upstream? */
+  width: auto !important;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+iframe {
+  width: 1px;
+  min-width: 100%;
+  margin-top: $gutter-half;
+}
+
+main img {
+  border: 1px dotted;
+}
+
+/* when nav in sidebar is not for in-page links */
+.sitenav {
+  .active a {
+    background-color: $link-colour;
+    color: $page-colour;
+  }
+}
+
+@import "issue-page";

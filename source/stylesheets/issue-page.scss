@@ -1,0 +1,71 @@
+$positive-colour: #43b93c;
+$somewhat-positive-colour: #c8ec86;
+$neutral-colour: $orange;
+$negative-colour: $error-colour;
+
+/* meta data */
+
+dl.data {
+  @extend %contain-floats;
+
+  dt {
+    font-weight: bold;
+    float: left;
+    clear: left;
+  }
+
+  dd {
+    float: left;
+    margin-left: .4em;
+  }
+
+  dd.strength1:after,
+  dd.strength2:after,
+  dd.strength3:after {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: -3px;
+  }
+
+  dd.strength1:after {
+    background: $positive-colour;
+  }
+  dd.strength2:after {
+    background: $neutral-colour;
+  }
+  dd.strength3:after {
+    background: $negative-colour;
+  }
+}
+
+/* tool audit results */
+
+@mixin result-status($colour) {
+  content: "";
+  background: $colour;
+  display: block;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 10px;
+}
+
+td.found:before {
+  @include result-status($positive-colour);
+}
+
+td.warning:before,
+td.manual:before {
+  @include result-status($somewhat-positive-colour);
+}
+
+td.identified:before {
+  @include result-status($neutral-colour);
+}
+
+td.notfound:before {
+  @include result-status($negative-colour);
+}
+

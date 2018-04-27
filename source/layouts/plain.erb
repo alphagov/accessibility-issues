@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example: <%= current_page.data.title || title || "Code Example" %></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="noindex" />
+
+    <%= javascript_include_tag "iframeResizer.contentWindow.min.js" %>
+    <script>
+      <%= yield_content :js %>
+    </script>
+    <style>
+      body {
+        color: #000;
+        background-color: #fff;
+      }
+      <%= yield_content :css %>
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+---
+layout: core
+title: Issues by WCAG Success Criteria
+---
+
+<%= partial "/_includes/sitenav" %>
+
+# Find issues by WCAG Success Criteria
+
+Issues that are not covered here will be <%= link_to "issues by best practice", "/filter/by_best_practice.html" %>.
+
+<table>
+  <thead>
+    <tr>
+      <th>WCAG SC</th>
+      <th>Name</th>
+      <th>Level</th>
+      <th>Version</th>
+      <th>Minimum requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% data.wcag.each do |criterion| %>
+      <tr>
+        <th>
+          <%= link_to criterion.sc, "/filter/by_wcag_#{criterion.sc}.html" %>
+        </th>
+        <td>
+          <%= criterion.name %>
+        </td>
+        <td>
+          <%= criterion.level %>
+        </td>
+        <td>
+          <%= criterion.version %>
+        </td>
+        <td>
+          <%= criterion.level != "AAA" && criterion.version == 2.0 ? "Yes" : "No" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

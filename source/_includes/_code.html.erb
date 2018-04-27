@@ -1,0 +1,26 @@
+<% page_path = "#{current_page.url}example.html" %>
+<% code_html = escape_html partial("#{current_page.url}example_html").strip rescue nil %>
+<% code_css = escape_html partial("#{current_page.url}example_css").strip rescue nil %>
+<% code_js = escape_html partial("#{current_page.url}example_js").strip rescue nil %>
+
+<% unless code_html.blank? %>
+  <h2 id="code-example"><a href="<%= url_for(page_path) %>">Code example</a></h2>
+
+  <iframe src="<%= url_for(page_path) %>" title="Code example for '<%= title %>'"></iframe>
+
+  <% unless code_html.blank? %>
+    <pre class="html"><code><%= code_html %></code></pre>
+  <% end %>
+
+  <% unless code_css.blank? %>
+    <pre class="css"><code><%= code_css %></code></pre>
+  <% end %>
+
+  <% unless code_js.blank? %>
+    <pre class="js"><code><%= code_js %></code></pre>
+  <% end %>
+<% else %>
+
+  <h2 id="example">Example</h2>
+
+<% end %>
