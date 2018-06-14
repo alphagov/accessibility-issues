@@ -46,6 +46,10 @@ Suggested optional other sections:
 If the issue should display a code example, simply add any HTML into the `_example_html.erb` file, CSS into the `_example_css.erb` file and/or JS into the `_example_js.erb` file. If a code example should appear, at least the HTML file should have content.
 As that code will be put together in an iframe, there is no need to use any classes.
 
+When you are running the Middleman server you will see all changes straight away except when new example code files get added. In order to see the content of the iframe, you need to stop the server and start it again with
+```
+bundle exec middleman build
+```
 
 ### `_occurrences.yml` (required)
 
