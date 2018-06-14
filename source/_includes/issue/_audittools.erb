@@ -1,0 +1,15 @@
+<% if has_audittools? tools %>
+  <h2 id="which-audit-tools-find-it">Which audit tools find it</h2>
+
+  <table>
+    <tbody>
+      <% data.audittools.tools.each do |id, name| %>
+        <tr>
+          <% result = tools[id] %>
+          <th><%= name %></th>
+          <td class="<%= result %>"><%= data.audittools.results[result] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

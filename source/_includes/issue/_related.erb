@@ -1,0 +1,13 @@
+<% unless slugs.blank? %>
+  <h2 id="related-issues">Related issues</h2>
+
+  <ul>
+    <% slugs.each do |slug| %>
+      <% related_path = "/issue/#{slug}/index.html" %>
+      <% related_title = title_from_path related_path %>
+      <% unless related_title.nil? %>
+        <li><%= link_to related_title, related_path %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>

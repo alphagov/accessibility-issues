@@ -2,90 +2,11 @@
 
   <h1 id="title"><%= current_page.data.title %></h1>
 
-  <dl class="data">
-    <% if current_page.data.severity %>
-      <dt>Severity</dt>
-      <dd class="strength<%= current_page.data.severity %>">
-        <% case current_page.data.severity %>
-        <% when 1 %>
-          Minor
-        <% when 2 %>
-          Medium
-        <% when 3 %>
-          Critical
-        <% end %>
-      </dd>
-    <% end %>
+  <%= partial "/_includes/issue/metadata", locals: {
+    metadata: current_page.data
+  } %>
 
-    <% if current_page.data.complexity %>
-      <dt>Complexity</dt>
-      <dd class="strength<%= current_page.data.complexity %>">
-        <% case current_page.data.complexity %>
-        <% when 1 %>
-          Easy
-        <% when 2 %>
-          Medium
-        <% when 3 %>
-          Complex
-        <% end %>
-      </dd>
-    <% end %>
-
-    <% if current_page.data.complexity %>
-      <dt>Prevalence</dt>
-      <dd class="strength<%= current_page.data.complexity %>">
-      <% case current_page.data.complexity %>
-        <% when 1 %>
-          Uncommon
-        <% when 2 %>
-          Can happen
-        <% when 3 %>
-          Very common
-        <% end %>
-      </dd>
-    <% end %>
-
-    <% if current_page.data.detectability || current_page.data.audittools %>
-      <dt>Detectability</dt>
-      <% if has_audittools? current_page.data.audittools %>
-        <% detectpercent = detectability_percentage current_page.data.audittools %>
-        <dd class="strength<%= detectability_strength detectpercent %>">
-          <%= detectpercent %>%
-        </dd>
-      <% else %>
-        <dd class="strength<%= current_page.data.detectability %>">
-          <% case current_page.data.detectability %>
-          <% when 1 %>
-            Easy
-          <% when 2 %>
-            Medium
-          <% when 3 %>
-            Difficult
-          <% end %>
-        </dd>
-      <% end %>
-    <% end %>
-
-    <dt>WCAG Success Criterion</dt>
-    <% if current_page.data.wcag %>
-      <dd><%= current_page.data.wcag %></dd>
-    <% else %>
-      <dd>none, best practice</dd>
-    <% end %>
-
-    <% if current_page.data.concern %>
-      <dt>Concerns</dt>
-      <dd><%= current_page.data.concern %></dd>
-    <% end %>
-
-    <% if current_page.data.impairment %>
-      <dt>Impairments</dt>
-      <dd><%= current_page.data.impairment %></dd>
-    <% end %>
-  </dl>
-
-
-  <%= partial "/_includes/code", locals: {
+  <%= partial "/_includes/issue/code", locals: {
     title: current_page.data.title
   } %>
 
@@ -93,35 +14,12 @@
   <%= yield %>
 
 
-  <% unless current_page.data.related.blank? %>
-    <h2 id="related-issues">Related issues</h2>
+  <%= partial "/_includes/issue/related", locals: {
+    slugs: current_page.data.related
+  } %>
 
-    <ul>
-      <% current_page.data.related.each do |related| %>
-        <% related_path = "/issue/#{related}/index.html" %>
-        <% related_title = title_from_path related_path %>
-        <% unless related_title.nil? %>
-          <li><%= link_to related_title, related_path %></li>
-        <% end %>
-      <% end %>
-    </ul>
-  <% end %>
-
-
-  <% if has_audittools? current_page.data.audittools %>
-    <h2 id="which-audit-tools-find-it">Which audit tools find it</h2>
-
-    <table>
-      <tbody>
-        <% data.audittools.tools.each do |tool| %>
-          <tr>
-            <% result = current_page.data.audittools[tool[0]] %>
-            <th><%= tool[1] %></th>
-            <td class="<%= result %>"><%= data.audittools.results[result] %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  <% end %>
+  <%= partial "/_includes/issue/audittools", locals: {
+    tools: current_page.data.audittools
+  } %>
 
 <% end %>

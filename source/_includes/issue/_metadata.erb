@@ -1,0 +1,81 @@
+<dl class="data">
+  <% if metadata.severity %>
+    <dt>Severity</dt>
+    <dd class="strength<%= metadata.severity %>">
+      <% case metadata.severity %>
+      <% when 1 %>
+        Minor
+      <% when 2 %>
+        Medium
+      <% when 3 %>
+        Critical
+      <% end %>
+    </dd>
+  <% end %>
+
+  <% if metadata.complexity %>
+    <dt>Complexity</dt>
+    <dd class="strength<%= metadata.complexity %>">
+      <% case metadata.complexity %>
+      <% when 1 %>
+        Easy
+      <% when 2 %>
+        Medium
+      <% when 3 %>
+        Complex
+      <% end %>
+    </dd>
+  <% end %>
+
+  <% if metadata.complexity %>
+    <dt>Prevalence</dt>
+    <dd class="strength<%= metadata.complexity %>">
+    <% case metadata.complexity %>
+      <% when 1 %>
+        Uncommon
+      <% when 2 %>
+        Can happen
+      <% when 3 %>
+        Very common
+      <% end %>
+    </dd>
+  <% end %>
+
+  <% if metadata.detectability || metadata.audittools %>
+    <dt>Detectability</dt>
+    <% if has_audittools? metadata.audittools %>
+      <% detectpercent = detectability_percentage metadata.audittools %>
+      <dd class="strength<%= detectability_strength detectpercent %>">
+        <%= detectpercent %>%
+      </dd>
+    <% else %>
+      <dd class="strength<%= metadata.detectability %>">
+        <% case metadata.detectability %>
+        <% when 1 %>
+          Easy
+        <% when 2 %>
+          Medium
+        <% when 3 %>
+          Difficult
+        <% end %>
+      </dd>
+    <% end %>
+  <% end %>
+
+  <dt>WCAG Success Criterion</dt>
+  <% if metadata.wcag %>
+    <dd><%= metadata.wcag %></dd>
+  <% else %>
+    <dd>none, best practice</dd>
+  <% end %>
+
+  <% if metadata.concern %>
+    <dt>Concerns</dt>
+    <dd><%= metadata.concern %></dd>
+  <% end %>
+
+  <% if metadata.impairment %>
+    <dt>Impairments</dt>
+    <dd><%= metadata.impairment %></dd>
+  <% end %>
+</dl>
