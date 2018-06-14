@@ -1,3 +1,11 @@
+// copied from frontend toolkit, no idea how to reference it otherwise before SASS files are called
+$helvetica-regular: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+
+$toolkit-font-stack: $helvetica-regular;
+$toolkit-font-stack-tabular: $helvetica-regular;
+
+@import "govuk_tech_docs";
+
 
 /* @todo: remove when tech-docs-gem release includes
           https://github.com/alphagov/tech-docs-gem/pull/20 */
