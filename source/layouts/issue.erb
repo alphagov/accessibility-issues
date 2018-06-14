@@ -98,7 +98,7 @@
 
     <ul>
       <% current_page.data.related.each do |related| %>
-        <% related_path = "/issues/#{related}/index.html" %>
+        <% related_path = "/issue/#{related}/index.html" %>
         <% related_title = title_from_path related_path %>
         <% unless related_title.nil? %>
           <li><%= link_to related_title, related_path %></li>
