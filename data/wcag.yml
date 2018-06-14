@@ -191,6 +191,12 @@
   level: AAA
   version: 2.0
 -
+  sc: 2.1.4
+  name: Character Key Shortcuts
+  anchor: character-key-shortcuts
+  level: A
+  version: 2.1
+-
   sc: 2.2.1
   name: Timing Adjustable
   anchor: timing-adjustable
@@ -318,14 +324,14 @@
   version: 2.1
 -
   sc: 2.5.3
-  name: Character Key Shortcuts
-  anchor: character-key-shortcuts
+  name: Label in Name
+  anchor: label-in-name
   level: A
   version: 2.1
 -
   sc: 2.5.4
-  name: Label in Name
-  anchor: label-in-name
+  name: Motion Actuation
+  anchor: motion-actuation
   level: A
   version: 2.1
 -
@@ -339,12 +345,6 @@
   name: Concurrent Input Mechanisms
   anchor: concurrent-input-mechanisms
   level: AAA
-  version: 2.1
--
-  sc: 2.5.7
-  name: Motion Actuation
-  anchor: motion-actuation
-  level: A
   version: 2.1
 -
   sc: 3.1.1
