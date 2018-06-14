@@ -19,3 +19,4 @@ results:
   notfound: not found
   identified: noticed but not a fail
   manual: user to check
+  untested: not tested yet

@@ -43,6 +43,10 @@ dl.data {
 
 /* tool audit results */
 
+td.untested {
+  color: $secondary-text-colour;
+}
+
 @mixin result-status($colour) {
   content: "";
   background: $colour;
@@ -68,4 +72,3 @@ td.identified:before {
 td.notfound:before {
   @include result-status($negative-colour);
 }
-

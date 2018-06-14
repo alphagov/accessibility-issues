@@ -28,7 +28,7 @@ Some of the meta data at the top of the file is required, some is optional.
 * impairment: optional, one or more of: visual, motor, hearing, cognitive
 * tags: optional, any comma-separated tags, not used in the output yet
 * related: optional, list of related issues which need to be referring to a sibling issue folder name, these will appear underneath the main content in the output
-* audittools: optional, test results of various automated accessibility testing tools; should ideally be tested as a whole, delete whole section if none was tested; these will appear at the very bottom of the output
+* audittools: optional, test results of various automated accessibility testing tools; should ideally be tested as a whole, leave default 'untested' otherwise; these will appear at the very bottom of the output (if any value is other than 'untested')
 
 
 #### Content (required)

@@ -47,7 +47,7 @@
 
     <% if current_page.data.detectability || current_page.data.audittools %>
       <dt>Detectability</dt>
-      <% if current_page.data.audittools %>
+      <% if has_audittools? current_page.data.audittools %>
         <% detectpercent = detectability_percentage current_page.data.audittools %>
         <dd class="strength<%= detectability_strength detectpercent %>">
           <%= detectpercent %>%
@@ -108,7 +108,7 @@
   <% end %>
 
 
-  <% unless current_page.data.audittools.blank? %>
+  <% if has_audittools? current_page.data.audittools %>
     <h2 id="which-audit-tools-find-it">Which audit tools find it</h2>
 
     <table>

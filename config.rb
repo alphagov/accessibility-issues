@@ -53,6 +53,10 @@ helpers do
     resource.data.title unless resource.nil?
   end
 
+  def has_audittools? toolsdata
+    !(toolsdata.blank? || toolsdata.all? {|k, v| v == 'untested'})
+  end
+
   def detectability_percentage toolsdata
     count_all = toolsdata.count
     detectable = ['found', 'found_paid', 'warning']
