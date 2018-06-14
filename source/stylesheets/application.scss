@@ -7,13 +7,6 @@ $toolkit-font-stack-tabular: $helvetica-regular;
 @import "govuk_tech_docs";
 
 
-/* @todo: remove when tech-docs-gem release includes
-          https://github.com/alphagov/tech-docs-gem/pull/20 */
-body {
-  color: $text-colour;
-  background-color: $page-colour;
-}
-
 table {
   margin-top: $gutter; /* @todo: fix upstream? */
   width: auto !important;
