@@ -22,7 +22,7 @@ Some of the meta data at the top of the file is required, some is optional.
 * severity: optional but recommended, a number between 1-3, 3 means it's such a big barrier that someone will not be able to complete a task, 1 means it's a small annoyance that someone will need a bit more time to complete a task
 * complexity: optional but recommended, a number between 1-3, 3 means it's difficult to fix, 1 means it's easy to fix
 * prevalence: optional, a number between 1-3, 3 means the issue is extremely common, 1 means it's quite rare (this might later be removed and be calculated from properly recorded occurrences)
-* detectability: optional, a number between 1-3, 3 means the issue is easy to detect (manually or automatically), 1 means it's difficult to detect; this will be automatically calculated when `audittools` data is present (see below)
+* detectability: optional, a number between 1-3, 1 means the issue is easy to detect (manually or automatically), 3 means it's difficult to detect; this will be automatically calculated when `audittools` data is present (see below)
 * wcag: WCAG Success Criterion, can be comma-separated list, has to be filled in if a criterion applies because leaving it empty will categorise the issue as 'best practice'
 * concern: required, one or more of: code, design, content
 * impairment: optional, one or more of: visual, motor, hearing, cognitive

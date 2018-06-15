@@ -1,5 +1,6 @@
 $positive-colour: #43b93c;
 $somewhat-positive-colour: #c8ec86;
+$weak-colour: $focus-colour;
 $neutral-colour: $orange;
 $negative-colour: $error-colour;
 
@@ -31,7 +32,7 @@ dl.data {
   }
 
   dd.strength1:after {
-    background: $positive-colour;
+    background: $weak-colour;
   }
   dd.strength2:after {
     background: $neutral-colour;
