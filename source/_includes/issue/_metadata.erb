@@ -27,10 +27,10 @@
     </dd>
   <% end %>
 
-  <% if metadata.complexity %>
+  <% if metadata.prevalence %>
     <dt>Prevalence</dt>
-    <dd class="strength<%= metadata.complexity %>">
-    <% case metadata.complexity %>
+    <dd class="strength<%= metadata.prevalence %>">
+    <% case metadata.prevalence %>
       <% when 1 %>
         Uncommon
       <% when 2 %>
