@@ -9,6 +9,6 @@ layout: core
 This is a collection of accessibility issues we found.
 
 <%= partial "/_includes/issues_table", locals: {
-  issues: sitemap.resources.select{|resource| resource.options[:layout]=='issue'}.sort_by{|row| row.path}.reverse,
+  issues: sitemap.resources.select{|resource| resource.options[:layout]=='issue'}.sort_by{|row| row.data.title},
   cols: [:wcag, :concern, :severity, :complexity]
 } %>

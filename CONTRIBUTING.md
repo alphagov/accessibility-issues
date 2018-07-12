@@ -7,7 +7,7 @@ But for now we're testing this out only internally for a while before we will op
 
 ## How to add a new issue (or occurrence of an existing one)
 
-To add a new issue copy the `source/issue/_template` folder into the same parent folder (`source/issue`) and give it a name of a consecutive number.
+To add a new issue copy the `source/issue/_template` folder into the same parent folder (`source/issue`) and give it a name. Please make sure that name is a good general summary of the issue but also as short as possible. Only use lowercase characters and dashes in that name.
 
 The folder contains the following files...
 
