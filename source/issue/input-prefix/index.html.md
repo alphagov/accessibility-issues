@@ -54,11 +54,13 @@ This is the clearest and easiest.
 ### Add `aria-describedby` to the input
 
 ```
-<span class="visually-hidden" id="pound"> (in </span>
+<span class="visually-hidden" id="pound"> in </span>
 £
-<span class="visually-hidden">)</span>
 <input aria-describedby="pound" id="salary" name="salary" type="text">
 ```
+
+Apart from adding `aria-describedby` to the element around the pound sign, it makes sense to add some more context. Instead of just saying '£', say 'in £' to make it clearer when read in one sentence. You can hide the word 'in' in an accessible way so that it's not visible on the screen but only for screen reader users.
+
 
 ### Reposition prefix within label to be in front of input
 
