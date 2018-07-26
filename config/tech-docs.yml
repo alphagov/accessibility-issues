@@ -4,7 +4,7 @@ host: /
 # Header-related options
 show_govuk_logo: false
 service_name: Accessibility Issues
-service_link: /
+service_link: https://alphagov.github.io/accessibility-issues/
 phase: Alpha
 
 # Links to show on right-hand-side of header

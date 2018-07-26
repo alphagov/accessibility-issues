@@ -4,6 +4,10 @@ GovukTechDocs.configure(self)
 
 fake_pages = ['page']
 
+configure :development do
+  config[:tech_docs][:service_link] = '/'
+end
+
 ready do
 
   issues = sitemap.resources.select{|resource| resource.options[:layout]=='issue'}

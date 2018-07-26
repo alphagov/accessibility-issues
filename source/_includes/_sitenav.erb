@@ -1,6 +1,6 @@
 <% content_for :sidebar do %>
   <ul class="sitenav">
-    <%= nav_link_to "List of issues", "/" %>
+    <%= nav_link_to "List of issues", config[:tech_docs][:service_link] %>
     <%= nav_link_to "Issues filtered by WCAG SC", "/wcag.html" %>
     <%= nav_link_to "Issues filtered by concerns", "/concerns.html" %>
   </ul>
