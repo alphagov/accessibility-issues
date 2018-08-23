@@ -3,7 +3,7 @@ layout: issue
 title: Icon has no text label
 severity: 3
 complexity: 2
-prevalence: 2
+prevalence: 3
 detectability: 3
 wcag: 1.1.1
 concern: design
@@ -26,7 +26,7 @@ audittools:
   aslint: notfound
 ---
 
-A button with an icon that shows a down arrow doesn't have any accompanying text.
+A clickable icon that shows a down arrow doesn't have any accompanying text.
 
 
 ## Why it's a problem
@@ -36,6 +36,8 @@ Just an icon by itself can be difficult to understand by anyone as it can be amb
 When the image doesn't load for whatever reason (for example due to a bad connection or firewall setting), the action behind the icon will be completely missed.
 
 When people change colours on websites (for example, people with visual impairments who need a higher contrast or dyslexic people who need a tint), it can happen that background images will be removed. That also means that the action will be missed.
+
+Speech recognition users would not know how to activate the icon as it's not clear what they should call it. With the button look missing, users wouldn't know that it could be activated with a button shortcut. The only way to click it would be by using "mouse grid" which is time-consuming.
 
 As there is visually hidden alternative text in this case, this is not an issue for screen reader users.
 
@@ -48,4 +50,4 @@ No testing tool finds this.
 
 ## How to fix it
 
-Always accompany icons with text.
+Always accompany icons with text. Even when this can be a design challenge.

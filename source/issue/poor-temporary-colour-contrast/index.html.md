@@ -46,5 +46,6 @@ You could use standalone colour contrast checkers. But finding all possible colo
 
 ## How to fix it
 
-Increase the contrast. For example, choosing `#ffcd70` as the focus background colour meets the requirements.
-But this introduces the conundrum that the focus state might not be clear enough for people with low vision to notice it.
+Increase the contrast. For example, choosing `#ffcd70` as the focus background colour meets the requirements, or choosing a darker link colour.
+
+But making the background colour even lighter introduces the conundrum that the focus state might not be clear enough for people with low vision to notice it.

@@ -32,7 +32,8 @@ A button expands and collapses some initially hidden content underneath it. But 
 ## Why it's a problem
 
 When the purpose of a button which expands hidden text is not announced to screen reader users, they don't have any way of knowing that there is more content. They would miss that additional content.
-When the text of the button is clear (like here it changes from "Expand" to "Collapse"), this does not seem as bad, but screen readers do not announce this change of content, so users stay as clueless.
+
+When the text of the button is clear (like here it changes from "Expand" to "Collapse"), this does not seem as bad. But screen readers do not announce this change of content (without extra code). So users stay as clueless.
 
 
 ## How to test for it
