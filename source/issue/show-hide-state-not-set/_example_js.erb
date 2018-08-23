@@ -1,0 +1,40 @@
+function ready(fn) {
+  if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+function createTrigger() {
+  var trigger = document.createElement('button');
+  trigger.classList.add('trigger');
+  trigger.textContent = 'Expand';
+  return trigger;
+}
+
+function toggleVisibility(trigger, target) {
+  if (target.getAttribute('aria-expanded') == 'false') {
+    target.setAttribute('aria-expanded', true);
+    trigger.textContent = 'Collapse';
+  } else {
+    target.setAttribute('aria-expanded', false);
+    trigger.textContent = 'Expand';
+  }
+}
+
+function showHide(){
+  var containers = document.querySelectorAll('.collapsible');
+
+  Array.prototype.forEach.call(containers, function(container, i){
+    var target = container.querySelector('.target');
+    target.setAttribute('aria-expanded', false);
+
+    var trigger = createTrigger();
+    container.insertBefore(trigger, container.firstChild);
+
+    trigger.onclick = function(){ toggleVisibility(trigger, target); };
+  });
+}
+
+ready(showHide);
