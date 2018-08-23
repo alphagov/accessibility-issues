@@ -57,7 +57,8 @@ td.untested {
   margin-bottom: 10px;
 }
 
-td.found:before {
+td.found:before,
+td.found_paid:before {
   @include result-status($positive-colour);
 }
 

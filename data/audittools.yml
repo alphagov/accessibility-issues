@@ -14,7 +14,7 @@ tools:
   aslint: AS&shy;Lint
 results:
   found: issue found
-  error_paid: issue found (paid)
+  found_paid: issue found (paid)
   warning: warning only
   notfound: not found
   identified: noticed but not a fail
