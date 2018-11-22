@@ -26,14 +26,14 @@ audittools:
   aslint: found
 ---
 
-A page contains no level 1 heading (`h1`) but starts with an level 2 heading (`h2`).
+A page contains no level 1 heading (`h1`) but starts with a level 2, 3 or 4 heading (`h2`, `h3` or `h4`).
 
 
 ## Why it's a problem
 
 Screen reader users often navigate by headings. Having a good hierarchical structure lets them get an overview of what the page is about.
 
-This is also beneficial for SEO.
+This is also beneficial for Search Engine Optimisation (SEO).
 
 
 ## How to test for it
@@ -45,4 +45,5 @@ There are also browser extensions and bookmarklets which show a page's heading s
 
 ## How to fix it
 
-Always let your main content start with an `h1`. This first heading should also reflect what the page is about.
+Always start your main content with an `h1`. This first heading should also reflect what the page is about.
+
