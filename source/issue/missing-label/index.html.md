@@ -32,13 +32,13 @@ A form field is preceded by a heading asking for a name but there is no label or
 ## Why it's a problem
 
 The label gets read out by **screen readers** when navigating the form to help identify immediately what the form field is about.
-When the label is missing, screen reader users can only find it by navigating around and searching for the context. That takes longer and might be difficult for them to do.
+When the label is missing, screen reader users can only find it by navigating and searching for the context. That takes longer and might be difficult for them to do.
 
 Correctly marked up labels provide additional click space which makes it easier for people with **reduced motor skills** or people on **mobile phones** to activate the field.
 When the label is missing, a form field is more difficult to hit.
 
 **Speech recognition** users might activate the field by saying what they think is the label.
-When the label is missing or not correctly associated with the field, those speech patterns won't work and users will take longer to activate the field.
+If the label is missing or not correctly associated with the field, those speech patterns won't work and users will take longer to activate the field.
 
 
 ## How to test for it
@@ -59,7 +59,7 @@ Provide a `label` element to go with the `input` and link them via their respect
 <input id="name" [...] />
 ```
 
-If you need to keep the heading, you can put the label inside it.
+If you need to keep the heading, you shouldcan put the label inside it.
 You can also accessibly hide the label and have both label and heading, but that would duplicate it for screen reader users.
 
 
