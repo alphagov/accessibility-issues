@@ -34,7 +34,7 @@ E.g. "Contact - Register your micropig" for a page which lets you "Enter your co
 
 * The page title is often the very first thing a screen reader reads out. It helps screen reader users to know quickly which page they are on and what it is about. When the page title is too short and unclear, it will make it difficult to get a quick overview of the content.
 * Users often use page titles to identify a page, for example because it will be what a search engine uses as the link text to the page or it appears in users' bookmarks. Unclear page titles make those confusing.
-* Search engines weigh content of page titles highly.
+* Search engines attach more weight to page titles.
 
 
 ## How to test for it
@@ -47,3 +47,4 @@ Testing tools cannot identify the usefulness of a page title. This has to be tes
 The easiest way is to always use the same content as the first heading plus the static website title. E.g. "Enter your contact details - Register your micropig".
 
 But the first part can also be something that is similar to the first heading and doesn't need to be the same.
+
