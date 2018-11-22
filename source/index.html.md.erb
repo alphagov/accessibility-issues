@@ -6,7 +6,11 @@ layout: core
 
 # Accessibility Issues
 
-This is a collection of accessibility issues we found.
+This tool documents accessibility issues to:
+* explain why something is an issue
+* provide ways to avoid or fix these issues
+* share the solutions and best practice across government
+
 
 <%= partial "/_includes/issues_table", locals: {
   issues: sitemap.resources.select{|resource| resource.options[:layout]=='issue'}.sort_by{|row| row.data.title},
