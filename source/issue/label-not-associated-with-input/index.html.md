@@ -27,8 +27,9 @@ audittools:
   aslint: found
 ---
 
-A form field is preceded by a label asking for a name but the label is not correctly linked to the question due to a typo on the `for` attribute.
-The results would be the same if there was no `for` attribute.
+A form field is preceded by a label asking for a name but the label is not associated with input due to one of the following:
+- the label is not correctly linked to the question due to a typo on the `for` attribute
+- the `for` attribute is missing
 
 
 ## Why it's a problem
