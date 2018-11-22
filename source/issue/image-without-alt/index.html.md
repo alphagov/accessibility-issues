@@ -49,4 +49,4 @@ If the image is decorative, add an empty `alt` parameter.
   <img src="logo.png" alt="" />
 ```
 
-If the image is not decorative, add an `alt` parameter with text which describes the meaning of the image. [W3C's alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) gives a good overview which text to add when.
+If the image is not decorative, add an `alt` parameter with text which describes the meaning of the image. [W3C's alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) has a good overview which text to add when.
