@@ -26,7 +26,7 @@ audittools:
   aslint: notfound
 ---
 
-The colour contrast of a link is not enough when focussed. Its contrast ratio is 4.07, so below the minimum requirement of 4.5.
+The colour contrast of a link is below 4.5 when focussed. Its contrast ratio is 4.07, so below the minimum requirement of 4.5.
 
 
 ## Why it's a problem
