@@ -31,8 +31,8 @@ A heading asks the question "How many planets are in our solar system?" and a gr
 
 ## Why it's a problem
 
-The legend gets read out by screen readers alongside the label when navigating the form to help identify immediately what the form field is about.
-When the legend doesn't include the question, it will make it difficult for screen reader users to understand the context and fill in the field.
+The legend gets read out by screen readers alongside the label when navigating the form to help identify what the form field is about.
+When the legend does not include the question, it will make it difficult for screen reader users to understand the context and fill in the field.
 
 
 ## How to test for it
@@ -52,4 +52,5 @@ Make sure the legend contains everything a user needs to understand the context 
 ```
 
 If the hint is short and important, it can be added to the question.
-If the hint is longer and important, it can be connected to the question via `aria-describedby`.
+If the hint is longer and important, it can be connected to the question using `aria-describedby`.
+
