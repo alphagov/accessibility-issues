@@ -26,14 +26,14 @@ audittools:
   aslint: notfound
 ---
 
-A button expands and collapses some initially hidden content underneath it. But it cannot be determined programmatically what the button does, so it does not get announced to screen readers.
+A button expands and collapses some initially hidden content underneath it. But it cannot be determined programmatically what the button does, so screen readers do not announce it.
 
 
 ## Why it's a problem
 
 When the purpose of a button which expands hidden text is not announced to screen reader users, they don't have any way of knowing that there is more content. They would miss that additional content.
 
-When the text of the button is clear (like here it changes from "Expand" to "Collapse"), this does not seem as bad. But screen readers do not announce this change of content (without extra code). So users stay as clueless.
+When the text of the button is clear (for example when it changes from "Expand" to "Collapse"), this does not seem as bad. But screen readers do not notify the user of this change of content (without extra code).
 
 
 ## How to test for it
@@ -44,8 +44,9 @@ Use a screen reader. Testing tools don't find this.
 ## How to fix it
 
 Move the `aria-expanded` attribute to the element which triggers the show/hide functionality. Although it is [according to spec](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded), it doesn't work with any of the major screen readers.
-It is advised to then also add a `aria-controls` attribute which should include the `id` of the affected element.
+It is advised to then also add an `aria-controls` attribute which should include the `id` of the affected element.
 
 ```
 <button aria-expanded="false" aria-controls="hidden-content">Expand</button>
 ```
+
